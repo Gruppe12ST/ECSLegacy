@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ECS.Legacy2
 {
-    class TempSensor: ITempSensor
+    public class TempSensor: ITempSensor
     {
         public IRandom random { private get; set; }
 
