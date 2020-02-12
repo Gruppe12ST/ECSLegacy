@@ -17,7 +17,28 @@ namespace ECS.Legacy2.UnitTest
         [SetUp]
         public void SetUp()
         {
+            heater = new Heater();
+            fake = new FakeLogger();
+        }
 
+        [TestCase(2)]
+        public void TurnOff(int værdi)
+        {
+            heater.logger = fake;
+            heater.TurnOff();
+            int resultat = fake.value;
+
+            Assert.That(resultat,Is.EqualTo(værdi));
+        }
+
+        [TestCase(1)]
+        public void TurnOn(int værdi)
+        {
+            heater.logger = fake;
+            heater.TurnOn();
+            int resultat = fake.value;
+
+            Assert.That(resultat, Is.EqualTo(værdi));
         }
 
     }
