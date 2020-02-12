@@ -8,6 +8,7 @@ namespace ECS.Legacy2
 {
     public class TempSensor: ITempSensor
     {
+
         public IRandom random { private get; set; }
 
         public int GetTemp()
