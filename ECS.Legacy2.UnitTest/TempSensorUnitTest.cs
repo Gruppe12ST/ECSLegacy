@@ -12,7 +12,7 @@ namespace ECS.Legacy2.UnitTest
         [SetUp]
         public void SetUp()
         {
-            fake= new FakeRandom();
+            fake = new FakeRandom();
             uut = new TempSensor();
         }
         [TestCase(31)]
