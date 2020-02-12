@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ECS.Legacy2
 {
-    class Heater: IHeater
+    public class Heater: IHeater
     {
         public ILogger logger {private get; set; }
 
